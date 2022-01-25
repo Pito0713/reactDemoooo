@@ -36,7 +36,6 @@ const itemReducer = (state = initState, action) => {
         }
 
         case 'SET_TIME_MOMENT': {
-            // console.log(123)
             // console.log(moment.tz.setDefault(state.timezone))
             // console.log(moment())
             // moment.tz.setDefault(state.timezone)

@@ -94,7 +94,6 @@ const GoUpdate = (data) => {
 
     const handleConfirm = async () => {
         setIsModalVisible(false);
-        console.log(variables)
         await pointService.updatePoint(variables)
             .then(res => {
                 if (res) {
@@ -139,12 +138,13 @@ const GoUpdate = (data) => {
             <Modal title="編輯" visible={isModalVisible} onOk={handleConfirm} onCancel={handleCancel}>
                 <Form
                     name="basic"
-                    labelCol={{ span: 6 }}
+                    labelCol={{ span: 2 }}
                     wrapperCol= {{ span: 10 }}
                     initialValues={{ remember: true }}
                 >
                     <Form.Item
                         label="帳號"
+                        className ='block-padding'
                     >
                         <Input 
                             value={variables.target.account} 
@@ -156,6 +156,7 @@ const GoUpdate = (data) => {
                     </Form.Item>
                     <Form.Item
                         label="單據"
+                        className ='block-padding'
                     >
                         <Input 
                             value={variables.target.single}
@@ -167,6 +168,7 @@ const GoUpdate = (data) => {
                     </Form.Item>
                     <Form.Item
                         label="金額"
+                        className ='block-padding'
                     >
                         <Input 
                             value={variables.target.amount}
@@ -178,6 +180,7 @@ const GoUpdate = (data) => {
                     </Form.Item>
                     <Form.Item
                         label="內容"
+                        className ='block-padding'
                     >
                         <Input 
                             value={variables.target.content}
@@ -321,6 +324,7 @@ export default class POINT extends React.Component {
                         <Form.Item
                             label="單據原因"
                             className ='block-padding'
+                            labelCol={{ span: 12 }}
                         >
                             <Cascader 
                                 options={POINT_OPTION} 
@@ -333,7 +337,7 @@ export default class POINT extends React.Component {
                             label="選擇日期"
                             className ='block-padding'
                         >
-                            <Space direction="vertical" size={12}>
+                            <Space direction="vertical">
                                 <RangePicker 
                                     onChange={this.handlePickerChange} 
                                     value={['', null, undefined].includes(this.state.fetehForm.startTime) || ['', null, undefined].includes(this.state.fetehForm.endTime) ? null : [moment(this.state.fetehForm.startTime, dateFormat), moment(this.state.fetehForm.endTime, dateFormat)]}

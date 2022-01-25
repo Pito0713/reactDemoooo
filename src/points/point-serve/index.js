@@ -179,7 +179,7 @@ export default class POINT extends React.Component {
                     <Form
                         name="basic"
                         labelCol={{ span: 2 }}
-                        wrapperCol= {{ span: 5 }}
+                        wrapperCol= {{ span: 10 }}
                         initialValues={{ remember: true }}
                     >
                         <Form.Item
@@ -209,7 +209,7 @@ export default class POINT extends React.Component {
                             rules={[{ message: 'Please input your username!' }]}
                             className ='block-padding'
                         >
-                            <Space direction="vertical" size={12}>
+                            <Space direction="vertical">
                                 <DatePicker 
                                     value={['', null, undefined].includes(this.state.resultData.data[0].createRange) ? null : moment(this.state.resultData.data[0].createRange, dateFormat)}
                                     format={dateFormat}

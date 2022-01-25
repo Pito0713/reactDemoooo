@@ -90,15 +90,6 @@ export default class HALL extends React.Component {
         }
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        // console.log(prevState)
-        // console.log(this.state)
-        if (prevState.fetehForm.account !== this.state.fetehForm.account) { // => 比較更新前後的 state 屬性
-            // console.log(prevState)
-        }
-    }
-    
-
     handleChange = (event) => {
         this.setState(state => ({
             fetehForm: {
