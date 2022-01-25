@@ -168,20 +168,25 @@ export default class HALL extends React.Component {
                     >
                         <Form.Item
                             label="帳號"
-                            rules={[{ message: '請輸入' }]}
                             className ='block-padding'
+                            
                         >
-                            <Input value={this.state.fetehForm.account} name="account" onChange={this.handleChange}/>
+                            <Input 
+                                value={this.state.fetehForm.account} 
+                                name="account" 
+                                onChange={this.handleChange}
+                                placeholder="請輸入帳號"
+                            />
                         </Form.Item>
                         <Form.Item
                             label="名稱"
-                            rules={[{ message: 'Please input your username!' }]}
                             className ='block-padding'
                         >
                             <Input 
                                 value={this.state.fetehForm.name} 
                                 name="name" 
                                 onChange={this.handleChange}
+                                placeholder="請輸入帳號"
                             />
                         </Form.Item>
                         <Form.Item
@@ -192,7 +197,7 @@ export default class HALL extends React.Component {
                                 options={STATUS_OPTION} 
                                 value={this.state.fetehForm.status}
                                 onChange={this.handleStatusChange} 
-                                placeholder="Please select" 
+                                placeholder="請輸入狀態"
                             />
                         </Form.Item>
                         <Form.Item
@@ -205,7 +210,7 @@ export default class HALL extends React.Component {
                                     onChange={this.handlePickerChange} 
                                     value={['', null, undefined].includes(this.state.fetehForm.startTime) || ['', null, undefined].includes(this.state.fetehForm.endTime) ? null : [moment(this.state.fetehForm.startTime, dateFormat), moment(this.state.fetehForm.endTime, dateFormat)]}
                                     format={dateFormat}
-                                    placeholder={['开始时间','结束时间']}
+                                    placeholder={['開始時間','結束時間']}
                                 />
                             </Space>
                         </Form.Item>

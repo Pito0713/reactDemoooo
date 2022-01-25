@@ -143,35 +143,46 @@ export default class HALL extends React.Component {
                     >
                         <Form.Item
                             label="帳號"
-                            rules={[{ message: '請輸入' }]}
                             className ='block-padding'
                         >
-                            <Input value={this.state.fetehForm.account} name="account" onChange={this.handleChange}/>
+                            <Input 
+                                value={this.state.fetehForm.account} 
+                                name="account" 
+                                onChange={this.handleChange}
+                                placeholder="請輸入帳號"
+                            />
                         </Form.Item>
                         <Form.Item
                             label="密碼"
-                            rules={[{ message: 'Please input your password!' }]}
                             className ='block-padding'
                         >
-                            <Input value={this.state.fetehForm.password} name="password" onChange={this.handleChange}/>
+                            <Input 
+                                value={this.state.fetehForm.password}
+                                name="password"
+                                onChange={this.handleChange}
+                                placeholder="請輸入密碼"
+                            />
                         </Form.Item>
                         <Form.Item
                             label="名稱"
-                            rules={[{ message: 'Please input your name!' }]}
                             className ='block-padding'
                         >
-                            <Input value={this.state.fetehForm.name} name="name" onChange={this.handleChange}/>
+                            <Input 
+                                value={this.state.fetehForm.name}
+                                name="name"
+                                onChange={this.handleChange}
+                                placeholder="請輸入名稱"
+                            />
                         </Form.Item>
                         <Form.Item
                             label="狀態"
-                            rules={[{ message: 'Please input your status!' }]}
                             className ='block-padding'
                         >
                             <Cascader 
                                 options={STATUS_OPTION} 
                                 onChange={this.handleStatusChange}
                                 value={this.state.fetehForm.status}
-                                placeholder="Please select" 
+                                placeholder="請輸入狀態"
                             />
                         </Form.Item>
                         <Form.Item

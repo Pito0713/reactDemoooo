@@ -178,8 +178,8 @@ export default class POINT extends React.Component {
                 <div className='block'>
                     <Form
                         name="basic"
-                        labelCol={{ span: 2 }}
-                        wrapperCol= {{ span: 10 }}
+                        labelCol={{ span: 4 }}
+                        wrapperCol= {{ span: 12 }}
                         initialValues={{ remember: true }}
                     >
                         <Form.Item

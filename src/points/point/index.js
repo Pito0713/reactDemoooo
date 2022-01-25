@@ -138,7 +138,7 @@ const GoUpdate = (data) => {
             <Modal title="編輯" visible={isModalVisible} onOk={handleConfirm} onCancel={handleCancel}>
                 <Form
                     name="basic"
-                    labelCol={{ span: 2 }}
+                    labelCol={{ span: 4 }}
                     wrapperCol= {{ span: 10 }}
                     initialValues={{ remember: true }}
                 >
@@ -293,7 +293,7 @@ export default class POINT extends React.Component {
                 <div className='block'>
                     <Form
                         name="basic"
-                        labelCol={{ span: 8 }}
+                        labelCol={{ span: 10 }}
                         wrapperCol={{ span: 20 }}
                         initialValues={{ remember: true }}
                         autoComplete="off"
@@ -336,6 +336,7 @@ export default class POINT extends React.Component {
                         <Form.Item
                             label="選擇日期"
                             className ='block-padding'
+                            labelCol={{ span: 10 }}
                         >
                             <Space direction="vertical">
                                 <RangePicker 
