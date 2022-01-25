@@ -1,0 +1,15 @@
+.header-bar {
+    height:30px;
+    background-color: #d6d4d4;;
+    color: #130505;
+    display: flex;
+    width: 100%;
+}
+
+.header-bar__left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}

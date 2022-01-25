@@ -1,0 +1,11 @@
+.block-container {
+  width: 100%;
+  display: flex;
+  background-color: #bbb8b8;
+}
+
+.side-container {
+  width: 100%;
+}
+
+

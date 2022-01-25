@@ -1,0 +1,24 @@
+
+.aside-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+.aside-menu ul{
+    min-height: inherit;
+} 
+
+.aside-menu span{
+    color: #fff;
+    font-size: 14px;
+}
+
+.homeBG {
+    font-size: 28px;
+    text-align: center;
+    background-color: #001529;
+    padding: 1rem;
+    width: 256px;
+} 

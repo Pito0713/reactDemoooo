@@ -1,0 +1,15 @@
+.block {
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #d2d6de;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+}
+.d-flx {
+    display: flex;
+}
+
+.block-padding {
+    margin: 10px !important;
+}

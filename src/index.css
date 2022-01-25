@@ -1,0 +1,20 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
