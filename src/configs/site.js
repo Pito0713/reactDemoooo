@@ -2,11 +2,8 @@ export const TIME_FORMAT = 'YYYY-MM-DD HH:mm:ss'
 
 export const TIMEZONE_ENABLE = true
 
+// 預設時間
 export const TIMEZONE_DEFAULT = 'Asia/Shanghai'
-
-export const TIMEZONE_LIST = [
-  { value: 'Asia/Shanghai', text: '北京时间' },
-]
 
 // 預設語言
 export const LANGUAGE_DEFAULT = 'zh-cn'
