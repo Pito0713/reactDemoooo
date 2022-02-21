@@ -11,8 +11,8 @@ import VALUECARD from "./valuecard";
 // ---- Service ----
 import ReportsService from 'services/ReportsService'
 export default class welcome extends React.Component {
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
         this.state = {
             resultData: {
                 data: [
@@ -44,7 +44,6 @@ export default class welcome extends React.Component {
     }
 
     render() {
-
         return (
             <div>
                 <MainPage title={'站台數據'} />

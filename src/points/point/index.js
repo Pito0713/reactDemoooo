@@ -73,6 +73,7 @@ const columnsData = [
 ]
 
 const GoUpdate = (data) => {
+    // data 
     const target = data.value
     if (!['', null, undefined].includes(target.reason) && !Array.isArray(target.reason)) {
         let targetOption = POINT_OPTION.find(item => item.options === target.reason)
@@ -86,14 +87,14 @@ const GoUpdate = (data) => {
         reason: false,
     }
 
-    const [isModalVisible, setIsModalVisible] = React.useState(false);
+    const [isModelVisible, setIsModelVisible] = React.useState(false);
 
     const showModal = () => {
-        setIsModalVisible(true);
+        setIsModelVisible(true);
     };
 
     const handleConfirm = async () => {
-        setIsModalVisible(false);
+        setIsModelVisible(false);
         await pointService.updatePoint(variables)
             .then(res => {
                 if (res) {
@@ -105,7 +106,7 @@ const GoUpdate = (data) => {
     };
 
     const handleCancel = () => {
-        setIsModalVisible(false);
+        setIsModelVisible(false);
     };
 
     const [variables, setVariables] = React.useState({
@@ -135,7 +136,7 @@ const GoUpdate = (data) => {
             <Button type="primary" onClick={showModal}>
                 編輯
             </Button>
-            <Modal title="編輯" visible={isModalVisible} onOk={handleConfirm} onCancel={handleCancel}>
+            <Modal title="編輯" visible={isModelVisible} onOk={handleConfirm} onCancel={handleCancel}>
                 <Form
                     name="basic"
                     labelCol={{ span: 4 }}
@@ -274,7 +275,7 @@ export default class POINT extends React.Component {
             })
     }
     clear = (event) => {
-        this.setState(state => ({
+        this.setState(() => ({
             fetehForm: {
                 account: '',
                 single: '',

@@ -30,32 +30,6 @@ const verifyList = [
     { value: 'status', text: '狀態' },
 ]
 
-// const reducer = function(state, action){
-//     switch(action.type){
-//         case "SWITCH":
-//             return !state;
-//         default:
-//             throw new Error("Unknown action");
-//     }
-// }
-
-// const MenuPage = () =>{
-//     // const [isOpen, isOpenDispatch] = useReducer(reducer,true);
-
-//     // const menuItemData = useSelector(state => state.menuItemData);
-//     const dispatch = useDispatch();
-
-//     return (
-//         <button onClick={()=>{
-//             dispatch({
-//                 type: "SET_TIME_MOMENT",
-//                 // payload: {itemNew:"測試資料"}
-//             }); 
-//         }}>更改第一個menuItem</button>
-//     );
-// }
-
-
 export default class HALL extends React.Component {
     constructor(props) {
         super(props)
@@ -128,8 +102,6 @@ export default class HALL extends React.Component {
     }
 
     render() {
-        
-        
         return (
             <div>
                 <MainPage title={'新增帳號'} />

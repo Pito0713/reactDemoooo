@@ -1,7 +1,3 @@
-export const CURRENCY_MILLION = '万'
-
-export const DEFAULT_DELAY_TIME = 500
-
 export const TIME_FORMAT = 'YYYY-MM-DD HH:mm:ss'
 
 export const TIMEZONE_ENABLE = true
@@ -15,9 +11,6 @@ export const TIMEZONE_LIST = [
 // 預設語言
 export const LANGUAGE_DEFAULT = 'zh-cn'
 
-export const LANGUAGE_LIST = [
-  { label: '簡体中文', value: 'zh-cn', languageTags: 'zh-CN' },
-]
 
 export const MENU_LIST = [
   {

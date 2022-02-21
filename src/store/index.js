@@ -1,6 +1,10 @@
-import {createStore} from "redux";
+import { createStore, combineReducers } from "redux";
 import {itemReducer} from "./watch";
 
-const store = createStore(itemReducer); 
+const itemDATA = combineReducers({
+    itemReducer,
+});
+
+const store = createStore(itemDATA); 
 
 export {store};

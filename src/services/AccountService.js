@@ -49,21 +49,6 @@ class AccountService {
       })
 
       resolve(res)
-      //   return xhr({
-      //     method: 'post',
-      //     url: '',
-      //     data: body,
-      //   }).then((res) => {
-      //     setTimeout(() => {
-      //       resolve(res)
-      //     }, DEFAULT_DELAY_TIME)
-      //   }).catch((err) => {
-      //     const result = {
-      //       code: err.code,
-      //     }
-      //     result.message = getErrorMessage(err.code)
-      //     reject(result)
-      //   })
     })
   }
 
@@ -72,21 +57,6 @@ class AccountService {
       // == testData ==
       const res = true
       resolve(res)
-      //   return xhr({
-      //     method: 'post',
-      //     url: '',
-      //     data: body,
-      //   }).then((res) => {
-      //     setTimeout(() => {
-      //       resolve(res)
-      //     }, DEFAULT_DELAY_TIME)
-      //   }).catch((err) => {
-      //     const result = {
-      //       code: err.code,
-      //     }
-      //     result.message = getErrorMessage(err.code)
-      //     reject(result)
-      //   })
     })
   }
 }
