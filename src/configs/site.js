@@ -15,8 +15,8 @@ export const MENU_LIST = [
     name: 'accounts',
     text: '帳號管理',
     child: [
-      { code: 11, name: 'hall', text: '會員管理', route: 'accounts/hall' },
-      { code: 12, name: 'hall-create', text: '新增帳號', route: 'accounts/hall-create' },
+      { code: 11, name: 'hall', text: '會員管理', route: 'reactDemoooo/accounts/hall' },
+      { code: 12, name: 'hall-create', text: '新增帳號', route: 'reactDemoooo/accounts/hall-create' },
     ],
   },
   {
@@ -24,8 +24,8 @@ export const MENU_LIST = [
     name: 'points',
     text: '點數管理',
     child: [
-      { code: 21, name: 'point', text: '點數管理', route: 'points/point' },
-      { code: 22, name: 'point-serve', text: '點數服務', route: 'points/point-serve' },
+      { code: 21, name: 'point', text: '點數管理', route: 'reactDemoooo/points/point' },
+      { code: 22, name: 'point-serve', text: '點數服務', route: 'reactDemoooo/points/point-serve' },
     ],
   }
 ]

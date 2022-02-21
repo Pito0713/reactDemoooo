@@ -23,10 +23,10 @@ export default class APP extends React.Component {
               <HEADER></HEADER>
               <Routes>
                 <Route path="/reactDemoooo" element={<WELLCOME />} />
-                <Route path="accounts/hall" element={<HALL />} />
-                <Route path="accounts/hall-create" element={<HALLSUB />} />
-                <Route path="points/point" element={<POINTS />} />
-                <Route path="points/point-serve" element={<POINTSSERVE />} />
+                <Route path="/reactDemoooo/accounts/hall" element={<HALL />} />
+                <Route path="/reactDemoooo/accounts/hall-create" element={<HALLSUB />} />
+                <Route path="/reactDemoooo/points/point" element={<POINTS />} />
+                <Route path="/reactDemoooo/points/point-serve" element={<POINTSSERVE />} />
               </Routes>
             </div>
           </div>
