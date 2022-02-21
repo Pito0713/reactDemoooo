@@ -22,7 +22,7 @@ export default class APP extends React.Component {
             <div className="side-container">
               <HEADER></HEADER>
               <Routes>
-                <Route path="/" element={<WELLCOME />} />
+                <Route path="/reactDemoooo" element={<WELLCOME />} />
                 <Route path="accounts/hall" element={<HALL />} />
                 <Route path="accounts/hall-create" element={<HALLSUB />} />
                 <Route path="points/point" element={<POINTS />} />

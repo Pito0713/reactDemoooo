@@ -46,7 +46,7 @@ export default class welcome extends React.Component {
     render() {
         return (
             <div>
-                <MainPage title={'站台數據'} />
+                <MainPage title={'後台數據'} />
                 <div className='block'>
                     <div className='card-block'>
                         <div className='red-card card-container'>
