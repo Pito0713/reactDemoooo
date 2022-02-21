@@ -10,6 +10,7 @@ import { MENU_LIST } from 'configs/site'
 const { SubMenu } = Menu;
 
 const Sider = () => {
+    // V6版 取的當前的path
     let location = useLocation();
 
     const tempStrArr = location.pathname.split('/')
@@ -31,44 +32,42 @@ const Sider = () => {
         }
     };
 
-
     const state = {
         theme: 'dark',
         current: '1',
     };
 
-    
     const listsTitle = []
-        for (let i=0; i < MENU_LIST.length; i++){
-            let lists = []
-            for (let k=0; k < MENU_LIST[i].child.length; k++){
-                lists.push( 
-                    <Menu.Item key={'/'+MENU_LIST[i].child[k].route}>
-                        <Link to={MENU_LIST[i].child[k].route}>
-                            {MENU_LIST[i].child[k].text}
-                        </Link>
-                    </Menu.Item>
-                )
-            }        
-            listsTitle.push( 
-                <SubMenu key={MENU_LIST[i].name} title={MENU_LIST[i].text}>
-                    {lists}
-                </SubMenu>
+    for (let i=0; i < MENU_LIST.length; i++){
+        let lists = []
+        for (let k=0; k < MENU_LIST[i].child.length; k++){
+            lists.push(
+                <Menu.Item key={'/'+MENU_LIST[i].child[k].route}>
+                    <Link to={MENU_LIST[i].child[k].route}>
+                        {MENU_LIST[i].child[k].text}
+                    </Link>
+                </Menu.Item>
             )
         }
-        
-        return (
-            <Menu
-                theme={state.theme}
-                style={{ width: 256 }}
-                mode="inline"
-                openKeys={openKeys}
-                onOpenChange={onOpenChange}
-                selectedKeys={[location.pathname]}
-            >
-                {listsTitle}
-            </Menu>
-        );
+        listsTitle.push(
+            <SubMenu key={MENU_LIST[i].name} title={MENU_LIST[i].text}>
+                {lists}
+            </SubMenu>
+        )
+    }
+    
+    return (
+        <Menu
+            theme={state.theme}
+            style={{ width: 256 }}
+            mode="inline"
+            openKeys={openKeys}
+            onOpenChange={onOpenChange}
+            selectedKeys={[location.pathname]}
+        >
+            {listsTitle}
+        </Menu>
+    );
 }
 const INDEXHOME = () => {
     return (
@@ -81,7 +80,6 @@ const INDEXHOME = () => {
 }
 
 export default class ASIDE extends React.Component {
-
     render() {
         return (
             <div className="aside-menu">
