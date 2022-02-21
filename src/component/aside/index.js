@@ -73,7 +73,7 @@ const Sider = () => {
 const INDEXHOME = () => {
     return (
         <div className="homeBG">
-            <Link to='/'>
+            <Link to='/reactDemoooo'>
                 HOME
             </Link>
         </div>
